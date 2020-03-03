@@ -192,6 +192,11 @@ h1 {
   margin-bottom: 1.25rem;
   font-weight: bold;
 }
+@media screen and (max-width: 599px) {
+  h1 {
+    display: none;
+  }
+}
 
 .menu {
   min-height: 48rem;
@@ -269,11 +274,6 @@ h1 {
 }
 .menu__header .sidebar {
   width: 30%;
-}
-@media screen and (max-width: 599px) {
-  .menu__header .sidebar {
-    display: none;
-  }
 }
 .menu__header img {
   width: 100%;
@@ -469,6 +469,33 @@ h1 {
 }
 .menu__footer h2 {
   font-size: 1.8rem;
+}
+@media screen and (max-width: 599px) {
+  .menu {
+    /* .menu */
+    margin: 2rem 0.5rem 0.5rem;
+    padding: 1rem !important;
+  }
+  .menu h2 {
+    /*display: none;*/
+    font-size: 2rem;
+    margin: 0;
+  }
+  .menu img {
+    display: none;
+  }
+  .menu__header .sidebar {
+    display: none;
+  }
+  .menu__items {
+    width: 100%;
+  }
+  .menu__items .item {
+    margin-right: 0.5rem;
+  }
+  .menu__footer {
+    display: none;
+  }
 }
 
 .color-2a {
