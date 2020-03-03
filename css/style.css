@@ -207,6 +207,9 @@ h1 {
   justify-content: flex-start;
   align-items: center;
 }
+.menu h2 {
+  text-align: center;
+}
 .menu img {
   width: 4vw;
   height: auto;
