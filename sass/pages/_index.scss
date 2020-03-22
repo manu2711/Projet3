@@ -2,31 +2,34 @@
   .menu-preview {
     margin: 36px;
     margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
 
-    .image-menu {
-      width: 40%;
-      margin-bottom: 2.25rem;
-      box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
-      overflow: hidden;
-      img {
-        width: 100%;
-        vertical-align: middle;
-        transform: scale(1);
-        transition: 400ms ease-in-out;
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
 
-        &:hover {
-          transform: scale(1.3);
-          opacity: 0.3;
+      .image-menu {
+        width: 40%;
+        margin-bottom: 2.25rem;
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+        overflow: hidden;
+        img {
+          width: 100%;
+          vertical-align: middle;
+          transform: scale(1);
+          transition: 400ms ease-in-out;
+
+          &:hover {
+            transform: scale(1.3);
+            opacity: 0.3;
+          }
         }
-      }
 
-      @include mobile-only {
-        width: 100%;
-        max-width: 15rem;
+        @include mobile-only {
+          width: 100%;
+          max-width: 15rem;
+        }
       }
     }
 
